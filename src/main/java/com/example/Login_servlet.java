@@ -17,7 +17,7 @@ public class Login_servlet extends HttpServlet {
             String password = request.getParameter("password");
 
 
-            if ("admin" .equals(username) && "123".equals(password)) {
+            if ("admin".equals(username) && "123".equals(password)) {
                 request.setAttribute("user",username);
 
                 RequestDispatcher rq = request.getRequestDispatcher("welcome.jsp");
